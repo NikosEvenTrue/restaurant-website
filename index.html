@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ресторан</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cookie&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="top flex-row align-center between">
+            <div>
+                <img src="img/logo.png" alt="logo" />
+            </div>
+            <nav class="general-font bold small flex-row align-center between">
+                <div class="navbar flex-row align-center between">
+                    <a class="general-font bold small" href="#">ГЛАВНАЯ</a>
+                    <a class="general-font bold small" href="#">МЕНЮ</a>
+                    <a class="general-font bold small" href="#">О НАС</a>
+                    <a class="general-font bold small" href="#">БРОНЬ</a>
+                </div>
+                <div class="cart flex-row align-center between">
+                    <a href="#">
+                        <img src="img/cart.png" alt="shopping cart" />
+                    </a>
+                    <div class="line-vertical"></div>
+                    <div class="phone">
+                        <div class="flex-row align-center between no-gap">
+                            <a href="#">
+                                <img src="img/phone.png" alt="phone" />
+                            </a>
+                            <span class="general-font bold medium">+999-888-76-54</span>
+                        </div>
+                        <div>
+                            <span class="general-font small">Свяжитесь с нами для бронирования</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button type="button" class="button bg-clr-orange">
+                        ЗАКАЗ СТОЛИКА
+                    </button>
+                </div>
+            </nav>
+        </div>
+        <div class="greeting flex-column align-center">
+            <div class="title-font big txt-clr-warm-caramel">Добро пожаловать в</div>
+            <div class="title-font huge txt-clr-warm-caramel">Наш ресторан</div>
+            <div class="flex-row align-center between">
+                <div class="line-horizontal"></div>
+                <div class="general-font medium">ДОМ ЛУЧШЕЙ ЕДЫ</div>
+                <div class="line-horizontal"></div>
+            </div>
+            <button type="button" class="button bg-clr-orange">VIEW MENU</button>
+        </div>
+    </header>
+    <main>
+        <section id="cards" class="flex-row align-center center">
+            <div class="title-font medium card">
+                <div>
+                    <img src="img/cloche-covered-dish.png" alt="cloche covered dish" />
+                </div>
+                <div class="card-title txt-clr-dark-coal">Магическая
+                    <span class="txt-clr-sandy-bronze">Атмосфера</span>
+                </div>
+                <div class="card-description txt-clr-steel-ash">В нашем заведении царит магическая атмосфера
+                    наполненная вкусными ароматами</div>
+            </div>
+            <div class="title-font medium card">
+                <div>
+                    <img src="img/cloche-covered-dish.png" alt="cloche covered dish" />
+                </div>
+                <div class="card-title txt-clr-dark-coal">Лучшее качество
+                    <span class="txt-clr-sandy-bronze">Еды</span>
+                </div>
+                <div class="card-description txt-clr-steel-ash">Качество нашей
+                    Еды - отменное!</div>
+            </div>
+            <div class="title-font medium card">
+                <img src="img/cloche-covered-dish.png" alt="cloche covered dish" />
+                <div class="card-title txt-clr-dark-coal">Недорогая
+                    <span class="txt-clr-sandy-bronze">Еда</span>
+                </div>
+                <div class="card-description txt-clr-steel-ash">
+                    Стоимость нашей Еды
+                    зависит только от ее количества.
+                    Качество всегда на высоте!</div>
+            </div>
+        </section>
+        <section id="history" class="flex-row align-center center">
+            <div id="history-info">
+                <h2 class="title-font big">Наша <span class="txt-clr-warm-caramel">История</span></h2>
+                <p class="general-font medium txt-clr-steel-ash">
+                    Как и у любого другого самобытного места, у нас есть своя, особая история. Идея ресторана пришла
+                    основателям неожиданно. Во время прогулки по лесу создатель нашего ресторана застрял в сотнях
+                    километров
+                    от ближайшего населенного пункта. Вдали от цивилизации и связи им пришлось навремя обустровать себе
+                    нехитрый быт, добывать и готовить себе еду.
+                </p>
+                <div class="flex-row align-center center">
+                    <div class="flex-column align-center around">
+                        <div class="general-font big txt-clr-sandy-bronze">93</div>
+                        <div class="general-font medium txt-clr-black">Напитки</div>
+                    </div>
+                    <div class="flex-column align-center around">
+                        <div class="general-font big txt-clr-sandy-bronze">206</div>
+                        <div class="general-font medium txt-clr-black">Еда</div>
+                    </div>
+                    <div class="flex-column align-center around">
+                        <div class="general-font big txt-clr-sandy-bronze">71</div>
+                        <div class="general-font medium txt-clr-black">Закуски</div>
+                    </div>
+                </div>
+            </div>
+            <div id="history-images">
+                <img src="img/history/history-1.png" alt="history image 1" />
+                <img src="img/history/history-2.png" alt="history image 2" />
+                <img src="img/history/history-3.png" alt="history image 3" />
+                <img src="img/history/history-4.png" alt="history image 4" />
+            </div>
+        </section>
+        <article class="invite flex-row align-center around">
+            <div>
+                <h2 class="title-font big txt-clr-warm-caramel">Отпразднуйте в одном из<br />
+                    самых лучших ресторанов.</h2>
+                <p class="general-font semi-big bold">Только в этом месяце бизнес-ланч от 250 ₽</p>
+            </div>
+            <button type="button" class="button bg-clr-orange">
+                ЗАКАЗ СТОЛИКА
+            </button>
+        </article>
+        <article id="dishes" class="flex-column align-center">
+            <h2 class="title-font big">Наши <span class="txt-clr-warm-caramel">Блюда</span></h2>
+            <div class="flex-row around">
+                <img src="img/dishes/dishes-side.png" alt="dishes side image" />
+                <div class="flex-column between">
+                    <div class="flex-row">
+                        <img src="img/dishes/dish-1.png" alt="dish 1" />
+                        <div class="title-font medium flex-row around align-center">
+                            <p>Гамбургер мини</p>
+                            <div class="dish-line"></div>
+                            <p>220 ₽</p>
+                        </div>
+                    </div>
+                    <div class="flex-row">
+                        <img src="img/dishes/dish-1.png" alt="dish 1" />
+                        <div class="title-font medium flex-row around align-center">
+                            <p>Гамбургер мини</p>
+                            <div class="dish-line"></div>
+                            <p>220 ₽</p>
+                        </div>
+                    </div>
+                    <div class="flex-row">
+                        <img src="img/dishes/dish-1.png" alt="dish 1" />
+                        <div class="title-font medium flex-row around align-center">
+                            <p>Гамбургер мини</p>
+                            <div class="dish-line"></div>
+                            <p>220 ₽</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="menu" class="flex-column align-center">
+            <h2 class="title-font big txt-clr-white">Наше меню</h2>
+            <div class="menu-list flex-row">
+                <div class="menu-item flex-column align-center flex-end">
+                    <div class="menu-item-img">
+                        <img src="img/menu-item-1.png" alt="menu item" />
+                        <div class="menu-item-img-price">
+                            <img src="img/menu-ellipse.png" alt="menu item image" />
+                            <p class="price-font">420</p>
+                        </div>
+                    </div>
+                    <h3 class="title-font medium">Гамбургер макси</h3>
+                    <p class="general-font medium txt-clr-black">Максимально толстый
+                        слой мяса</p>
+                    <button type="button" class="button bg-clr-mustard">
+                        Заказать
+                    </button>
+                </div>
+                <div class="menu-item flex-column align-center flex-end">
+                    <div class="menu-item-img">
+                        <img src="img/menu-item-1.png" alt="menu item" />
+                        <div class="menu-item-img-price">
+                            <img src="img/menu-ellipse.png" alt="menu item image" />
+                            <p class="price-font">420</p>
+                        </div>
+                    </div>
+                    <h3 class="title-font medium">Гамбургер макси</h3>
+                    <p class="general-font medium txt-clr-black">Максимально толстый
+                        слой мяса</p>
+                    <button type="button" class="button bg-clr-mustard">
+                        Заказать
+                    </button>
+                </div>
+                <div class="menu-item flex-column align-center flex-end">
+                    <div class="menu-item-img">
+                        <img src="img/menu-item-1.png" alt="menu item" />
+                        <div class="menu-item-img-price">
+                            <img src="img/menu-ellipse.png" alt="menu item image" />
+                            <p class="price-font">420</p>
+                        </div>
+                    </div>
+                    <h3 class="title-font medium">Гамбургер макси</h3>
+                    <p class="general-font medium txt-clr-black">Максимально толстый
+                        слой мяса</p>
+                    <button type="button" class="button bg-clr-mustard">
+                        Заказать
+                    </button>
+                </div>
+            </div>
+        </article>
+        <article class="feedback">
+            <div class="feedback-list">
+                <div class="feedback-item flex-column align-center between">
+                    <p class="general-font medium txt-clr-black cursive">Я надолго запомню мой День рождения,
+                        проведённый в этом ресторане! Кусочек родной Армении!!!
+                        Отдельное спасибо за комплемент в виде фруктовой тарелки. Будем рекомендовать этот ресторан
+                        своим друзьям и родственникам также за рубежом, путешествующих в Санкт-Петербург!!!</p>
+                    <img src="img/visitor-1.png" alt="visitor 1" />
+                    <h3 class="general-font medium txt-clr-black semi-bold">Посетитель</h3>
+                    <p class="general-font medium txt-clr-black">Николай</p>
+                </div>
+            </div>
+        </article>
+        <article class="dish-gallery flex-column">
+            <H1 class="title-font big">Галерея <span class="title-font big txt-clr-warm-caramel">Блюд</span></H1>
+            <div class="dish-gallery-container flex-row center">
+                <div class="dish-gallery-images">
+                    <img class="dish-gallery-image n1" src="img/dish-gallery/dish-gallery-glasses.png" alt="glasses" />
+                    <img class="dish-gallery-image n2" src="img/dish-gallery/dish-gallery-coffee.png" alt="coffee" />
+                    <img class="dish-gallery-image n3" src="img/dish-gallery/dish-gallery-soup.png" alt="soup" />
+                    <img class="dish-gallery-image n4" src="img/dish-gallery/dish-gallery-coffee.png" alt="coffee" />
+                    <img class="dish-gallery-image n5" src="img/dish-gallery/dish-gallery-soup.png" alt="soup" />
+                    <img class="dish-gallery-image n6" src="img/dish-gallery/dish-gallery-glasses.png" alt="glasses" />
+                </div>
+            </div>
+        </article>
+        <article class="cooks flex-column">
+            <H1 class="title-font big">Наши <span class="title-font big txt-clr-warm-caramel">Повара</span></H1>
+            <div class="cooks-container flex-row center">
+                <img src="img/cooks/cook-1.png" alt="cook 1" />
+                <img src="img/cooks/cook-2.png" alt="cook 2" />
+                <img src="img/cooks/cook-3.png" alt="cook 3" />
+            </div>
+        </article>
+        <footer class="title-font medium flex-column center">
+            © Copyright 2025
+        </footer>
+    </main>
+</body>
+
+</html>

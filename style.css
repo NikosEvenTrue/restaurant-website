@@ -158,23 +158,23 @@
     align-items: end;
 }
 
-.between {
+.justify-between {
     justify-content: space-between;
 }
 
-.around {
+.justify-around {
     justify-content: space-around;
 }
 
-.center {
+.justify-center {
     justify-content: center;
 }
 
-.flex-start {
+.justify-start {
     justify-content: flex-start;
 }
 
-.flex-end {
+.justify-end {
     justify-content: flex-end;
 }
 
@@ -245,7 +245,7 @@ nav {
     margin-top: 10%;
 }
 
-#cards {
+.cards {
     margin-top: -200px;
     gap: 30px;
 }
@@ -270,50 +270,50 @@ nav {
     padding: 20px 20px 0;
 }
 
-#history {
+.history {
     height: 100vh;
 }
 
-#history-info {
+.history-info {
     width: 444px;
     text-align: center;
     margin-right: 125px;
 }
 
-#history-info h2 {
+.history-info h2 {
     margin: 0;
 }
 
-#history-info p {
+.history-info p {
     padding-top: 21px;
     margin: 0;
 }
 
-#history-info>div {
+.history-info>div {
     padding-top: 39px;
 }
 
-#history-images {
+.history-images {
     width: 539px;
     height: 498px;
     position: relative;
 }
 
-#history-images img:nth-child(1) {
+.history-images img:nth-child(1) {
     position: absolute;
     z-index: 3;
     top: 0;
     left: 0;
 }
 
-#history-images img:nth-child(2) {
+.history-images img:nth-child(2) {
     position: absolute;
     z-index: 1;
     top: -10px;
     left: 194px;
 }
 
-#history-images img:nth-child(3) {
+.history-images img:nth-child(3) {
     position: absolute;
     z-index: 2;
     top: 182px;
@@ -321,7 +321,7 @@ nav {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-#history-images img:nth-child(4) {
+.history-images img:nth-child(4) {
     position: absolute;
     z-index: 0;
     top: 42px;
@@ -335,12 +335,12 @@ nav {
     height: 357px;
 }
 
-#dishes {
+.dishes {
     height: 100vh;
     align-items: center;
 }
 
-#dishes h2 {
+.dishes h2 {
     margin-bottom: 139px;
     align-items: center;
 }
@@ -352,11 +352,15 @@ nav {
     width: 10vw;
 }
 
-#menu {
+.menu {
     background-image: url("img/menu-background.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+}
+
+.menu>h2 {
+    padding-bottom: 13.8vh;
 }
 
 .menu-item {
@@ -397,7 +401,7 @@ nav {
     position: absolute;
     z-index: 2;
     left: 31px;
-    top: 5px;
+    top: 34px;
 }
 
 .menu-item>h3 {
@@ -465,7 +469,7 @@ nav {
     grid-template-rows: repeat(2, 1fr);
 }
 
-.dish-gallery-images::before {
+/* .dish-gallery-images::before {
     content: "";
     background-color: red;
     width: 30px;
@@ -473,7 +477,7 @@ nav {
     position: absolute;
     left: 0vw;
     top: 0vw;
-}
+} */
 
 .dish-gallery-image {
     width: 100%;

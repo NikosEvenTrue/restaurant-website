@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <title>Ресторан</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,249 +15,241 @@
         rel="stylesheet">
 </head>
 
-<body>
-    <header>
-        <div class="top flex-row align-center justify-between">
-            <div>
-                <img src="img/logo.png" alt="logo" />
-            </div>
-            <nav class="general-font bold small flex-row align-center justify-between">
-                <div class="navbar flex-row align-center justify-between">
-                    <a class="general-font bold small" href="#">ГЛАВНАЯ</a>
-                    <a class="general-font bold small" href="#">МЕНЮ</a>
-                    <a class="general-font bold small" href="#">О НАС</a>
-                    <a class="general-font bold small" href="#">БРОНЬ</a>
+<body class="txt-clr-white normal">
+    <div class="hero-section">
+        <header>
+            <img src="img/header/logo.png" alt="Логотип сайта" srcset="img/header/logo.svg" />
+            <nav class="desktop-nav general-font bold small">
+                <div class="navbar">
+                    <a href="#">ГЛАВНАЯ</a>
+                    <a href="#">МЕНЮ</a>
+                    <a href="#">О НАС</a>
+                    <a href="#">БРОНЬ</a>
                 </div>
-                <div class="cart flex-row align-center justify-between">
+                <div class="cart">
                     <a href="#">
-                        <img src="img/cart.png" alt="shopping cart" />
+                        <img src="img/header/cart.png" alt="Иконка корзины" srcset="img/header/cart.svg" />
                     </a>
-                    <div class="line-vertical"></div>
-                    <div class="phone">
-                        <div class="flex-row align-center justify-between no-gap">
-                            <a href="#">
-                                <img src="img/phone.png" alt="phone" />
-                            </a>
-                            <span class="general-font bold medium">+999-888-76-54</span>
-                        </div>
-                        <div>
-                            <span class="general-font small">Свяжитесь с нами для бронирования</span>
-                        </div>
+                </div>
+                <div class="phone">
+                    <div class="phone-number">
+                        <a href="tel:+9998887654">
+                            <img src="img/header/phone.png" alt="Иконка телефона" srcset="img/header/phone.svg" />
+                        </a>
+                        <p class="general-font bold medium">+999-888-76-54</p>
                     </div>
+                    <p class="general-font small">Свяжитесь с нами для<br>бронирования</p>
                 </div>
-                <div>
-                    <button type="button" class="button bg-clr-orange">
-                        ЗАКАЗ СТОЛИКА
-                    </button>
-                </div>
+                <button class="nav-button button bg-clr-orange" type="button">
+                    ЗАКАЗ СТОЛИКА
+                </button>
             </nav>
-        </div>
-        <div class="greeting flex-column align-center">
-            <div class="title-font big txt-clr-warm-caramel">Добро пожаловать в</div>
-            <div class="title-font huge txt-clr-warm-caramel">Наш ресторан</div>
-            <div class="flex-row align-center justify-between">
-                <div class="line-horizontal"></div>
-                <div class="general-font medium">ДОМ ЛУЧШЕЙ ЕДЫ</div>
-                <div class="line-horizontal"></div>
-            </div>
-            <button type="button" class="button bg-clr-orange">VIEW MENU</button>
-        </div>
-    </header>
+            <button class="mobile-nav">
+                <img src="img/header/nav-icon.png" alt="Кнопка раскрывающая меню" srcset="img/header/nav-icon.svg" />
+            </button>
+        </header>
+        <section class="greeting flex-column align-center">
+            <h1 class="title-font big txt-clr-warm-caramel">
+                <span class="greeting-title">Добро пожаловать</span>
+                <span class="greeting-title-span title-font huge">аш ресторан</span>
+            </h1>
+            <p class="greeting-slogan general-font medium">ДОМ ЛУЧШЕЙ ЕДЫ</p>
+            <button class="greeting-button button bg-clr-orange" type="button">МЕНЮ</button>
+        </section>
+    </div>
     <main>
-        <section class="cards flex-row align-center justify-center">
-            <div class="title-font medium card">
-                <div>
-                    <img src="img/cloche-covered-dish.png" alt="cloche covered dish" />
-                </div>
-                <div class="card-title txt-clr-dark-coal">Магическая
+        <section class="cards title-font medium">
+            <div class="card">
+                <img src="img/cards/cloche-covered-dish.png" alt="Картинка парящего подноса"
+                    srcset="img/cards/cloche-covered-dish.svg" />
+                <h2 class="card-title txt-clr-dark-coal">Магическая
                     <span class="txt-clr-sandy-bronze">Атмосфера</span>
-                </div>
-                <div class="card-description txt-clr-steel-ash">В нашем заведении царит магическая атмосфера
-                    наполненная вкусными ароматами</div>
+                </h2>
+                <p class="card-description txt-clr-steel-ash">В нашем заведении царит магическая атмосфера
+                    наполненная вкусными ароматами</p>
             </div>
-            <div class="title-font medium card">
-                <div>
-                    <img src="img/cloche-covered-dish.png" alt="cloche covered dish" />
-                </div>
-                <div class="card-title txt-clr-dark-coal">Лучшее качество
+            <div class="card">
+                <img src="img/cards/cloche-covered-dish.png" alt="Картинка парящего подноса"
+                    srcset="img/cards/cloche-covered-dish.svg" />
+                <h2 class="card-title txt-clr-dark-coal">Лучшее качество
                     <span class="txt-clr-sandy-bronze">Еды</span>
-                </div>
-                <div class="card-description txt-clr-steel-ash">Качество нашей
-                    Еды - отменное!</div>
+                </h2>
+                <p class="card-description txt-clr-steel-ash">Качество нашей
+                    Еды - отменное!</p>
             </div>
-            <div class="title-font medium card">
-                <img src="img/cloche-covered-dish.png" alt="cloche covered dish" />
-                <div class="card-title txt-clr-dark-coal">Недорогая
+            <div class="card">
+                <img src="img/cards/cloche-covered-dish.png" alt="Картинка парящего подноса"
+                    srcset="img/cards/cloche-covered-dish.svg" />
+                <h2 class="card-title txt-clr-dark-coal">Недорогая
                     <span class="txt-clr-sandy-bronze">Еда</span>
-                </div>
-                <div class="card-description txt-clr-steel-ash">
-                    Стоимость нашей Еды
+                </h2>
+                <p class="card-description txt-clr-steel-ash">Стоимость нашей Еды
                     зависит только от ее количества.
-                    Качество всегда на высоте!</div>
+                    Качество всегда на высоте!</p>
             </div>
         </section>
-        <section class="history flex-row align-center  justify-center">
+        <section class="history title-font big">
             <div class="history-info">
-                <h2 class="title-font big">Наша <span class="txt-clr-warm-caramel">История</span></h2>
-                <p class="general-font medium txt-clr-steel-ash">
+                <h2 class="txt-clr-black">Наша <span class="txt-clr-warm-caramel">История</span></h2>
+                <p class="history-info-description general-font medium txt-clr-steel-ash">
                     Как и у любого другого самобытного места, у нас есть своя, особая история. Идея ресторана пришла
                     основателям неожиданно. Во время прогулки по лесу создатель нашего ресторана застрял в сотнях
                     километров
-                    от ближайшего населенного пункта. Вдали от цивилизации и связи им пришлось навремя обустровать себе
+                    от ближайшего населенного пункта. Вдали от цивилизации и связи им пришлось навремя обустровать
+                    себе
                     нехитрый быт, добывать и готовить себе еду.
                 </p>
-                <div class="flex-row align-center justify-center">
-                    <div class="flex-column align-center justify-around">
-                        <div class="general-font big txt-clr-sandy-bronze">93</div>
-                        <div class="general-font medium txt-clr-black">Напитки</div>
+                <div class="history-info-stat-container">
+                    <div class="history-info-stat">
+                        <p class="general-font big txt-clr-sandy-bronze">93</p3>
+                        <h3 class="general-font medium txt-clr-black">Напитки</h3>
                     </div>
-                    <div class="flex-column align-center justify-around">
-                        <div class="general-font big txt-clr-sandy-bronze">206</div>
-                        <div class="general-font medium txt-clr-black">Еда</div>
+                    <div class="history-info-stat">
+                        <p class="general-font big txt-clr-sandy-bronze">206</p>
+                        <h3 class="general-font medium txt-clr-black">Еда</h3>
                     </div>
-                    <div class="flex-column align-center justify-around">
-                        <div class="general-font big txt-clr-sandy-bronze">71</div>
-                        <div class="general-font medium txt-clr-black">Закуски</div>
+                    <div class="history-info-stat">
+                        <p class="general-font big txt-clr-sandy-bronze">71</p>
+                        <h3 class="general-font medium txt-clr-black">Закуски</h3>
                     </div>
                 </div>
             </div>
-            <div class="history-images">
-                <img src="img/history/history-1.png" alt="history image 1" />
-                <img src="img/history/history-2.png" alt="history image 2" />
-                <img src="img/history/history-3.png" alt="history image 3" />
-                <img src="img/history/history-4.png" alt="history image 4" />
-            </div>
+            <img class="history-collage" src="img/history/collage.png"
+                srcset="img/history/collage.png 556w, img/history/collage-mobile.png 307w"
+                alt="Коллаж из блюд и пространств ресторана" />
         </section>
-        <article class="invite flex-row align-center justify-around">
-            <div>
-                <h2 class="title-font big txt-clr-warm-caramel">Отпразднуйте в одном из<br />
-                    самых лучших ресторанов.</h2>
-                <p class="general-font semi-big bold">Только в этом месяце бизнес-ланч от 250 ₽</p>
-            </div>
-            <button type="button" class="button bg-clr-orange">
+        <section class="invite">
+            <h2 class="invite-title title-font big txt-clr-warm-caramel">Отпразднуйте в одном из
+                самых лучших ресторанов.</h2>
+            <p class="invite-description general-font semi-big bold">Только в этом месяце бизнес-ланч от 250 ₽</p>
+            <button class="invite-button button bg-clr-orange" type="button">
                 ЗАКАЗ СТОЛИКА
             </button>
-        </article>
-        <article class="dishes flex-column align-center justify-center">
-            <h2 class="title-font big">Наши <span class="txt-clr-warm-caramel">Блюда</span></h2>
-            <div class="flex-row justify-around">
-                <img src="img/dishes/dishes-side.png" alt="dishes side image" />
-                <div class="flex-column justify-between">
-                    <div class="flex-row">
-                        <img src="img/dishes/dish-1.png" alt="dish 1" />
-                        <div class="title-font medium flex-row justify-around align-center">
-                            <p>Гамбургер мини</p>
-                            <div class="dish-line"></div>
-                            <p>220 ₽</p>
+        </section>
+        <!--     <section class="dishes flex-column align-center justify-center">
+                <h2 class="title-font big">Наши <span class="txt-clr-warm-caramel">Блюда</span></h2>
+                <div class="flex-row justify-around">
+                    <img src="img/dishes/dishes-side.png" alt="dishes side image" />
+                    <div class="flex-column justify-between">
+                        <div class="flex-row">
+                            <img src="img/dishes/dish-1.png" alt="dish 1" />
+                            <div class="title-font medium flex-row justify-around align-center">
+                                <p>Гамбургер мини</p>
+                                <div class="dish-line"></div>
+                                <p>220 ₽</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="flex-row">
-                        <img src="img/dishes/dish-1.png" alt="dish 1" />
-                        <div class="title-font medium flex-row justify-around align-center">
-                            <p>Гамбургер мини</p>
-                            <div class="dish-line"></div>
-                            <p>220 ₽</p>
+                        <div class="flex-row">
+                            <img src="img/dishes/dish-1.png" alt="dish 1" />
+                            <div class="title-font medium flex-row justify-around align-center">
+                                <p>Гамбургер мини</p>
+                                <div class="dish-line"></div>
+                                <p>220 ₽</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="flex-row">
-                        <img src="img/dishes/dish-1.png" alt="dish 1" />
-                        <div class="title-font medium flex-row justify-around align-center">
-                            <p>Гамбургер мини</p>
-                            <div class="dish-line"></div>
-                            <p>220 ₽</p>
+                        <div class="flex-row">
+                            <img src="img/dishes/dish-1.png" alt="dish 1" />
+                            <div class="title-font medium flex-row justify-around align-center">
+                                <p>Гамбургер мини</p>
+                                <div class="dish-line"></div>
+                                <p>220 ₽</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </article>
-        <article class="menu flex-column align-center justify-center">
-            <h2 class="title-font big txt-clr-white">Наше меню</h2>
-            <div class="menu-list flex-row">
-                <div class="menu-item flex-column align-center justify-end">
-                    <div class="menu-item-img">
-                        <img src="img/menu-item-1.png" alt="menu item" />
-                        <div class="menu-item-img-price">
-                            <img src="img/menu-ellipse.png" alt="menu item image" />
-                            <p class="price-font">420</p>
+            </section>
+            <section class="menu flex-column align-center justify-center">
+                <h2 class="title-font big txt-clr-white">Наше меню</h2>
+                <div class="menu-list flex-row">
+                    <div class="menu-item flex-column align-center justify-end">
+                        <div class="menu-item-img">
+                            <img src="img/menu-item-1.png" alt="menu item" />
+                            <div class="menu-item-img-price">
+                                <img src="img/menu-ellipse.png" alt="menu item image" />
+                                <p class="price-font">420</p>
+                            </div>
                         </div>
+                        <h3 class="title-font medium">Гамбургер макси</h3>
+                        <p class="general-font medium txt-clr-black">Максимально толстый
+                            слой мяса</p>
+                        <button type="button" class="button bg-clr-mustard">
+                            Заказать
+                        </button>
                     </div>
-                    <h3 class="title-font medium">Гамбургер макси</h3>
-                    <p class="general-font medium txt-clr-black">Максимально толстый
-                        слой мяса</p>
-                    <button type="button" class="button bg-clr-mustard">
-                        Заказать
-                    </button>
-                </div>
-                <div class="menu-item flex-column align-center justify-end">
-                    <div class="menu-item-img">
-                        <img src="img/menu-item-1.png" alt="menu item" />
-                        <div class="menu-item-img-price">
-                            <img src="img/menu-ellipse.png" alt="menu item image" />
-                            <p class="price-font">420</p>
+                    <div class="menu-item flex-column align-center justify-end">
+                        <div class="menu-item-img">
+                            <img src="img/menu-item-1.png" alt="menu item" />
+                            <div class="menu-item-img-price">
+                                <img src="img/menu-ellipse.png" alt="menu item image" />
+                                <p class="price-font">420</p>
+                            </div>
                         </div>
+                        <h3 class="title-font medium">Гамбургер макси</h3>
+                        <p class="general-font medium txt-clr-black">Максимально толстый
+                            слой мяса</p>
+                        <button type="button" class="button bg-clr-mustard">
+                            Заказать
+                        </button>
                     </div>
-                    <h3 class="title-font medium">Гамбургер макси</h3>
-                    <p class="general-font medium txt-clr-black">Максимально толстый
-                        слой мяса</p>
-                    <button type="button" class="button bg-clr-mustard">
-                        Заказать
-                    </button>
-                </div>
-                <div class="menu-item flex-column align-center justify-end">
-                    <div class="menu-item-img">
-                        <img src="img/menu-item-1.png" alt="menu item" />
-                        <div class="menu-item-img-price">
-                            <img src="img/menu-ellipse.png" alt="menu item image" />
-                            <p class="price-font">420</p>
+                    <div class="menu-item flex-column align-center justify-end">
+                        <div class="menu-item-img">
+                            <img src="img/menu-item-1.png" alt="menu item" />
+                            <div class="menu-item-img-price">
+                                <img src="img/menu-ellipse.png" alt="menu item image" />
+                                <p class="price-font">420</p>
+                            </div>
                         </div>
+                        <h3 class="title-font medium">Гамбургер макси</h3>
+                        <p class="general-font medium txt-clr-black">Максимально толстый
+                            слой мяса</p>
+                        <button type="button" class="button bg-clr-mustard">
+                            Заказать
+                        </button>
                     </div>
-                    <h3 class="title-font medium">Гамбургер макси</h3>
-                    <p class="general-font medium txt-clr-black">Максимально толстый
-                        слой мяса</p>
-                    <button type="button" class="button bg-clr-mustard">
-                        Заказать
-                    </button>
                 </div>
-            </div>
-        </article>
-        <article class="feedback">
-            <div class="feedback-list">
-                <div class="feedback-item flex-column align-center justify-between">
-                    <p class="general-font medium txt-clr-black cursive">Я надолго запомню мой День рождения,
-                        проведённый в этом ресторане! Кусочек родной Армении!!!
-                        Отдельное спасибо за комплемент в виде фруктовой тарелки. Будем рекомендовать этот ресторан
-                        своим друзьям и родственникам также за рубежом, путешествующих в Санкт-Петербург!!!</p>
-                    <img src="img/visitor-1.png" alt="visitor 1" />
-                    <h3 class="general-font medium txt-clr-black semi-bold">Посетитель</h3>
-                    <p class="general-font medium txt-clr-black">Николай</p>
+            </section>
+            <section class="feedback">
+                <div class="feedback-list">
+                    <article class="feedback-item flex-column align-center justify-between">
+                        <p class="general-font medium txt-clr-black cursive">Я надолго запомню мой День рождения,
+                            проведённый в этом ресторане! Кусочек родной Армении!!!
+                            Отдельное спасибо за комплемент в виде фруктовой тарелки. Будем рекомендовать этот ресторан
+                            своим друзьям и родственникам также за рубежом, путешествующих в Санкт-Петербург!!!</p>
+                        <img src="img/visitor-1.png" alt="visitor 1" />
+                        <h3 class="general-font medium txt-clr-black semi-bold">Посетитель</h3>
+                        <p class="general-font medium txt-clr-black">Николай</p>
+                    </article>
                 </div>
-            </div>
-        </article>
-        <article class="dish-gallery flex-column">
-            <H1 class="title-font big">Галерея <span class="title-font big txt-clr-warm-caramel">Блюд</span></H1>
-            <div class="dish-gallery-container flex-row justify-center">
-                <div class="dish-gallery-images">
-                    <img class="dish-gallery-image n1" src="img/dish-gallery/dish-gallery-glasses.png" alt="glasses" />
-                    <img class="dish-gallery-image n2" src="img/dish-gallery/dish-gallery-coffee.png" alt="coffee" />
-                    <img class="dish-gallery-image n3" src="img/dish-gallery/dish-gallery-soup.png" alt="soup" />
-                    <img class="dish-gallery-image n4" src="img/dish-gallery/dish-gallery-coffee.png" alt="coffee" />
-                    <img class="dish-gallery-image n5" src="img/dish-gallery/dish-gallery-soup.png" alt="soup" />
-                    <img class="dish-gallery-image n6" src="img/dish-gallery/dish-gallery-glasses.png" alt="glasses" />
+            </section>
+            <section class="dish-gallery flex-column">
+                <h2 class="title-font big">Галерея <span class="title-font big txt-clr-warm-caramel">Блюд</span></h2>
+                <div class="dish-gallery-container flex-row justify-center">
+                    <div class="dish-gallery-images">
+                        <img class="dish-gallery-image n1" src="img/dish-gallery/dish-gallery-glasses.png"
+                            alt="glasses" />
+                        <img class="dish-gallery-image n2" src="img/dish-gallery/dish-gallery-coffee.png"
+                            alt="coffee" />
+                        <img class="dish-gallery-image n3" src="img/dish-gallery/dish-gallery-soup.png" alt="soup" />
+                        <img class="dish-gallery-image n4" src="img/dish-gallery/dish-gallery-coffee.png"
+                            alt="coffee" />
+                        <img class="dish-gallery-image n5" src="img/dish-gallery/dish-gallery-soup.png" alt="soup" />
+                        <img class="dish-gallery-image n6" src="img/dish-gallery/dish-gallery-glasses.png"
+                            alt="glasses" />
+                    </div>
                 </div>
-            </div>
-        </article>
-        <article class="cooks flex-column">
-            <H1 class="title-font big">Наши <span class="title-font big txt-clr-warm-caramel">Повара</span></H1>
-            <div class="cooks-container flex-row justify-center">
-                <img src="img/cooks/cook-1.png" alt="cook 1" />
-                <img src="img/cooks/cook-2.png" alt="cook 2" />
-                <img src="img/cooks/cook-3.png" alt="cook 3" />
-            </div>
-        </article>
-    </main>
-    <footer class="title-font medium flex-column justify-center">
-        © Copyright 2025
-    </footer>
+            </section>
+            <section class="cooks flex-column">
+                <h2 class="title-font big">Наши <span class="title-font big txt-clr-warm-caramel">Повара</span></h2>
+                <div class="cooks-container flex-row justify-center">
+                    <img src="img/cooks/cook-1.png" alt="cook 1" />
+                    <img src="img/cooks/cook-2.png" alt="cook 2" />
+                    <img src="img/cooks/cook-3.png" alt="cook 3" />
+                </div>
+            </section>
+        </main>
+        <footer class="title-font medium flex-column justify-center">
+            © Copyright 2025
+        </footer> -->
 </body>
 
 </html>

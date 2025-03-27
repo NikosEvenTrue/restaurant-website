@@ -11,37 +11,37 @@
     --font-title: Tinos, serif;
     --font-cursive: "Cookie", cursive;
 
-    --font-general-size-small: clamp(14.00px, 4.38vmin, 22.00px);
-    --font-general-size-medium: clamp(15.00px, 4.69vmin, 22.00px);
-    --font-general-size-semi-big: clamp(22.00px, 6.88vmin, 28.00px);
-    --font-general-size-big: clamp(40.00px, 12.50vmin, 44px);
+    --font-general-size-small: clamp(14.00px, calc(4.38 * var(--vmin)), 22.00px);
+    --font-general-size-medium: clamp(15.00px, calc(4.69 * var(--vmin)), 22.00px);
+    --font-general-size-semi-big: clamp(22.00px, calc(6.88 * var(--vmin)), 28.00px);
+    --font-general-size-big: clamp(40.00px, calc(12.50 * var(--vmin)), 44px);
 
-    --font-title-size-medium: clamp(24px, 7.5vmin, 35px);
-    --font-title-size-big: clamp(28.00px, 8.75vmin, 52.00px);
-    --font-title-size-huge: clamp(37.00px, 11.56vmin, 70px);
+    --font-title-size-medium: clamp(24px, calc(7.5 * var(--vmin)), 35px);
+    --font-title-size-big: clamp(28.00px, calc(8.75 * var(--vmin)), 52.00px);
+    --font-title-size-huge: clamp(37.00px, calc(11.56 * var(--vmin)), 70px);
 
-    --font-cursive-size-medium: clamp(30.00px, 9.38vmin, 40.00px);
+    --font-cursive-size-medium: clamp(30.00px, calc(9.38 * var(--vmin)), 40.00px);
 
     --default-column-gap: 1vw;
-    --default-row-gap: 0.9vh;
+    --default-row-gap: calc(0.9 * var(--vh));
 
     --main-inline-padding: 3vw;
     --header-inline-padding: 11vw;
-    --main-block-padding: 10vh;
+    --main-block-padding:calc(10 * var(--vh));
 }
 
 @media (min-width: 1200px) {
     :root {
-        --font-general-size-small: clamp(9.80px, 1.50vh, 18.20px);
-        --font-general-size-medium: clamp(12.60px, 1.92vh, 23.40px);
-        --font-general-size-semi-big: clamp(16.80px, 2.56vh, 31.20px);
-        --font-general-size-big: clamp(28.00px, 4.27vh, 52.00px);
+        --font-general-size-small: clamp(9.80px, calc(1.50 * var(--vh)), 18.20px);
+        --font-general-size-medium: clamp(12.60px, calc(1.92 * var(--vh)), 23.40px);
+        --font-general-size-semi-big: clamp(16.80px, calc(2.56 * var(--vh)), 31.20px);
+        --font-general-size-big: clamp(28.00px, calc(4.27 * var(--vh)), 52.00px);
 
-        --font-title-size-medium: clamp(18.20px, 2.78vh, 33.80px);
-        --font-title-size-big: clamp(35.00px, 5.34vh, 65.00px);
-        --font-title-size-huge: clamp(56.00px, 8.55vh, 104.00px);
+        --font-title-size-medium: clamp(18.20px, calc(2.78 * var(--vh)), 33.80px);
+        --font-title-size-big: clamp(35.00px, calc(5.34 * var(--vh)), 65.00px);
+        --font-title-size-huge: clamp(56.00px, calc(8.55 * var(--vh)), 104.00px);
 
-        --font-cursive-size-medium: clamp(21.00px, 3.21vh, 39.00px);
+        --font-cursive-size-medium: clamp(21.00px, calc(3.21 * var(--vh)), 39.00px);
 
         --main-inline-padding: 5vw;
     }
@@ -217,7 +217,7 @@ body {
 
 header {
     position: absolute;
-    padding: 4.6vh var(--header-inline-padding) 0;
+    padding: calc(4.6 * var(--vh)) var(--header-inline-padding) 0;
     background: transparent;
     box-sizing: border-box;
     width: 100%;
@@ -331,8 +331,8 @@ header {
     background-image: url("img/hero-image-mobile.png");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
-    padding: 4.6vh var(--header-inline-padding) 20vh;
+    height:calc( 100 * var(--vh));
+    padding: calc(4.6 * var(--vh)) var(--header-inline-padding)calc( 20 * var(--vh));
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -351,7 +351,7 @@ header {
 }
 
 .greeting-button {
-    margin-top: 5vh;
+    margin-top:calc( 5 * var(--vh));
 }
 
 @media (min-width: 481px) {
@@ -397,19 +397,19 @@ header {
     }
 
     .greeting-button {
-        margin-top: 2vh;
+        margin-top:calc( 2 * var(--vh));
     }
 }
 
 @media (min-width: 3840px) {
     .greeting {
-        padding: 4.6vh var(--main-inline-padding) 20vh;
+        padding: calc(4.6 * var(--vh)) var(--main-inline-padding)calc( 20 * var(--vh));
         background-image: url("img/hero-image.png");
         height: auto;
     }
 
     .greeting-container {
-        margin-top: 10vh;
+        margin-top:calc( 10 * var(--vh));
     }
 }
 
@@ -419,7 +419,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 2.1vh;
+    gap: calc(2.1 * var(--vh));
     flex-wrap: wrap;
 }
 
@@ -450,10 +450,9 @@ header {
 .card-description {
     font-size: 0.85em;
 }
-
 @media (min-aspect-ratio: 5/4) {
     .cards {
-        margin-top: -12vh;
+        margin-top: calc(-12 * var(--vh));
     }
 }
 
@@ -474,7 +473,7 @@ header {
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-    row-gap: 5vh;
+    row-gap:calc( 5 * var(--vh));
 }
 
 .history-info {
@@ -483,7 +482,7 @@ header {
 }
 
 .history-info>p {
-    padding: 2.21vh 0;
+    padding: calc(2.21 * var(--vh)) 0;
 }
 
 .history-info-stat-container {
@@ -537,7 +536,7 @@ header {
     background-image: url("img/invite.png");
     background-repeat: no-repeat;
     background-size: cover;
-    padding-block: 5vh;
+    padding-block:calc( 5 * var(--vh));
     padding-inline: var(--main-inline-padding);
 
 
@@ -546,7 +545,7 @@ header {
     align-items: center;
     justify-items: center;
     text-align: center;
-    gap: 5vmin;
+    gap:calc( 5 * var(--vmin));
 }
 
 .invite-title {
@@ -620,7 +619,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
-    height: 66.31vh;
+    height: calc(66.31 * var(--vh));
 }
 
 .dishes-side-img {
@@ -703,7 +702,7 @@ header {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    row-gap: 5vh;
+    row-gap:calc( 5 * var(--vh));
 }
 
 .menu-list {
@@ -766,7 +765,7 @@ header {
 }
 
 .feedback {
-    padding: 2vh var(--main-inline-padding);
+    padding:calc( 2 * var(--vh)) var(--main-inline-padding);
     background-color: var(--clr-light-gray);
 }
 
@@ -793,7 +792,7 @@ header {
 
 @media (min-width: 768px) {
     .feedback {
-        padding: 5vh calc(var(--main-inline-padding) + 4vw);
+        padding:calc( 5 * var(--vh)) calc(var(--main-inline-padding) + 4vw);
     }
 }
 
@@ -814,13 +813,13 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 5vh;
+    gap:calc( 5 * var(--vh));
 }
 
 .dish-gallery-container {
     width: 100%;
     display: grid;
-    gap: 5vmin;
+    gap: calc(5 * var(--vmin));
     grid-template-rows: repeat(6, 1fr);
 }
 
@@ -832,7 +831,7 @@ header {
 
 @media (min-width: 768px) {
     .dish-gallery-container {
-        gap: 3vmin;
+        gap:calc( 3 * var(--vmin));
         grid-template-rows: none;
         grid-template-areas: "g g"
             "c s"
@@ -871,7 +870,7 @@ header {
     }
 
     .dish-gallery-container {
-        gap: 2vh;
+        gap:calc( 2 * var(--vh));
         grid-template-areas: "g g c s"
             "c2 s2 g2 g2";
         --side-rectangle-width: calc(0.0318*(100vw - 2 * (var(--main-inline-padding) + 10vw)));
@@ -903,13 +902,14 @@ header {
     display: flex;
     flex-direction: column;
     text-align: center;
-    gap: 5vh;
+    gap: calc( 5 * var(--vh));
 }
 
 .cooks-container {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
-    gap: 2.22vmin;
+    gap: calc(2.22 * var(--vmin));
+    
 }
 
 .cooks-img {
@@ -948,7 +948,7 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2.22vmin;
+    gap: calc(2.22 * var(--vmin));
 }
 
 .cooks-container>img {
@@ -964,9 +964,9 @@ footer {
     align-items: center;
     justify-content: flex-start;
     text-align: center;
-    padding-top: 10vh;
+    padding-top:calc( 10 * var(--vh));
     background-image: url("img/footer.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 72vh;
+    height:calc( 72 * var(--vh));
 }
